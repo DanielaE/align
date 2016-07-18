@@ -9,6 +9,9 @@ http://boost.org/LICENSE_1_0.txt
 #ifndef BOOST_ALIGN_DETAIL_ALIGNMENT_OF_MSVC_HPP
 #define BOOST_ALIGN_DETAIL_ALIGNMENT_OF_MSVC_HPP
 
+#pragma warning(push)
+#pragma warning(disable: 4121) // alignment of a member was sensitive to packing
+
 #include <boost/align/detail/min_size.hpp>
 
 namespace boost {
@@ -32,4 +35,5 @@ struct alignment_of
 } /* .alignment */
 } /* .boost */
 
+#pragma warning(pop)
 #endif
