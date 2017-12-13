@@ -52,6 +52,7 @@ public:
     }
 
 private:
+    A();
     int state_;
 };
 

@@ -5,6 +5,11 @@ Copyright 2014 Glen Joseph Fernandes
 Distributed under the Boost Software License, Version 1.0.
 (http://www.boost.org/LICENSE_1_0.txt)
 */
+
+#ifdef _MSC_VER
+# pragma warning(disable: 4121) // alignment of a member was sensitive to packing
+#endif
+
 #include <boost/align/alignment_of.hpp>
 #include <boost/core/lightweight_test.hpp>
 #include <boost/config.hpp>
